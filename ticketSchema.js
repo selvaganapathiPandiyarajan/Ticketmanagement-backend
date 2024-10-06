@@ -1,0 +1,67 @@
+const mongoose =require('mongoose');
+
+
+const ticketDetails =new mongoose.Schema(
+    {
+        firstname:
+        {
+            type:String,
+            requried:true
+        },
+        lastname:
+        {
+            type:String,
+            requried:true   
+        },
+        email:
+        {
+            type:String,
+            requried:true    
+        },
+        type:
+        {
+            type:String,
+            requried:true    
+        },
+        service:
+        {
+            type:String,
+            requried:true        
+        },
+        subject:
+        {
+            type:String,
+            requried:true          
+        },
+        text:
+        {
+            type:String,
+            requried:true          
+        },
+        Priority:
+        {
+            type:String,
+            requried:true          
+        },
+        attach:
+        {
+            type:String,
+            requried:true          
+        },
+        status:
+        {
+            type:String,
+            requried:true          
+        },
+        adminallocater:
+        {
+            type:String,
+            requried:true          
+        },
+        ticketDescription:{
+            type:String
+        }
+
+    }
+)
+module.exports=mongoose.model('ticketDetails',ticketDetails)
